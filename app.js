@@ -10,7 +10,8 @@
 
 		/* Medium devices (desktops, 992px and up) */
 		if(deviceWidth > 992){
-			text.innerHTML = 'Desktop: ' + deviceWidth;
+			text.innerHTML = '<h2>Desktop</h2>'+ 'deviceWidth: ' + deviceWidth + 'px <br /> pixelRatio: ' + window.devicePixelRatio;
+
 
 			/* v1.0 Small devices (tablets, 768px and up) */
 			/* v1.1 Small devices (tablets, 700px and up) */
@@ -20,7 +21,7 @@
 			/* Extra small devices (phones, less than 768px) */
 			/* No media query since this is the default in Bootstrap */
 		} else {
-			text.innerHTML = 'Mobile: ' + deviceWidth;
+			text.innerHTML = '<h2>Mobile</h2> : ' + deviceWidth;
 		}
 	});
 })();
